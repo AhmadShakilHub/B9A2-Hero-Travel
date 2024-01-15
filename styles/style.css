@@ -8,9 +8,34 @@
     padding: 0;
     max-width: 1440px;
   }
+  .description{
+    color: rgba(19, 19, 24, 0.70);
+font-size: 1rem;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+.btn-primary{
+    color: #FFF;
+    padding: 15px 25px;
+font-size: 1rem;
+font-weight: 700;
+border: none;
+    border-radius: 8px;
+background: #FF5400;
+cursor: pointer;
+  }
+  .btn-primary:hover{
+    color: rgb(26, 6, 175);
+  }
+  main{
+    max-width: 1170px;
+    margin: 0 auto;
+  }
 
   /* .....Header section styles...... */
-
+header{
+    margin-bottom: 70px;
+}
   nav{
     padding: 0 40px;
     display: flex;
@@ -91,20 +116,33 @@ padding-bottom: 20px;
     color: rgba(19, 19, 24, 0.50);
     font-size: 1rem;
     font-weight: 400;
-
   }
-  .btn-primary{
-    color: #FFF;
-font-size: 1rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-    border-radius: 8px;
-background: #FF5400;
-  }
+ 
 
+/* .....Our Popular section styles..... */
 
+.popular-container{
+display: flex;
+align-items: center;
+gap: 20px;
+}
+.popular-content{
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+.popular-title{
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.popular-image{
+    width: calc(100% - 20px);
+}
+.popular-image img{
+    width: 100%;
+}
 
+/* .....Responsiveness for phone/small devices */
 
   @media screen and (max-width:600px) {
     nav{
@@ -112,17 +150,24 @@ background: #FF5400;
         flex-direction: column;
     }
     .banner{
-        padding: 10px;
+        padding:10px;
     }
     .banner-input{
         display: flex;
-        gap: 10px;
+        gap: 20px;
         flex-direction: column;
+       padding: 20px;
     }
     .input-field,.bnr-btn{
         width: 100%;
     }
     .banner-input .text{
        width: 92%;
+    }
+    .popular-container{
+        flex-direction: column;
+        gap: 50px;
+        padding: 10px;
+        margin: 20px;
     }
   }
