@@ -8,6 +8,10 @@
     padding: 0;
     max-width: 1440px;
   }
+  main{
+    max-width: 1170px;
+    margin: 0 auto;
+  }
   .description{
     color: rgba(19, 19, 24, 0.70);
 font-size: 1rem;
@@ -27,10 +31,11 @@ cursor: pointer;
   .btn-primary:hover{
     color: rgb(26, 6, 175);
   }
-  main{
-    max-width: 1170px;
-    margin: 0 auto;
-  }
+  .heading{
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
 
   /* .....Header section styles...... */
 header{
@@ -130,11 +135,6 @@ gap: 20px;
     width: calc(100% - 20px);
     padding: 10px;
 }
-.popular-title{
-    color: #131318;
-    font-size: 2.5rem;
-    font-weight: 800;
-}
 .popular-image{
     width: calc(100% - 20px);
 }
@@ -142,9 +142,80 @@ gap: 20px;
     width: 100%;
 }
 
+/* .....Destination section styles..... */
+
+.dest-content{
+    text-align: center;
+    padding: 0 120px;
+}
+.dest-img-container{
+    margin: 50px auto;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    height: 80vh;
+    grid-template-areas: 
+    "mal mal mal mal mal mal    ind ind ind ind ind ind"
+    "sri sri sri sri   nam nam nam nam nam kas  kas kas"
+    "bd bd bd bd bd         ban ban ban ban ban ban ban"
+    ;
+}
+#dest-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+.dest-img-1{
+grid-area: mal;
+background-image: url(../Images/Rectangle\ 5.png);
+}
+.dest-img-2{
+grid-area: ind;
+background-image: url(../Images/Rectangle\ 8.png);
+}
+.dest-img-3{
+grid-area: sri;
+background-image: url(../Images/Rectangle\ 6.png);
+}
+.dest-img-4{
+grid-area: nam;
+background-image: url(../Images/Rectangle\ 7.png);
+}
+.dest-img-5{
+grid-area: kas;
+background-image: url(../Images/Rectangle\ 9.png);
+}
+.dest-img-6{
+grid-area: bd;
+background-image: url(../Images/Rectangle\ 11.png);
+}
+.dest-img-7{
+grid-area: ban;
+background-image: url(../Images/Rectangle\ 10.png);
+}
+.dest-img-title{
+    color: #FFF;
+text-align: center;
+font-size: 1.75rem;
+font-weight: 800;
+}
+
 /* .....Responsiveness for phone/small devices */
 
   @media screen and (max-width:600px) {
+    *{
+        margin: 0 auto;
+    }
+    main{
+        width: 90vw;
+    }
     nav{
 
         flex-direction: column;
@@ -168,6 +239,29 @@ gap: 20px;
         flex-direction: column;
         gap: 50px;
         padding: 10px;
-        margin: 20px;
+    }
+    .dest-content{
+        margin-top: 50px;
+        padding: 10px;
+    }
+    .dest-content .heading{
+        margin-bottom: 20px;
+    }
+    .dest-img-container{
+        grid-template-columns: repeat(1, 1fr);
+      grid-template-areas: 
+      "mal"
+      "ind"
+      "sri"
+      "nam"
+      "kas"
+      "bd"
+      "ban"
+      ;
+      width: 87vw;
+    }
+    #dest-img{
+        background-size: cover;
+        height: 300px;
     }
   }
