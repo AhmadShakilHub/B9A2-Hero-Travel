@@ -149,13 +149,11 @@ gap: 20px;
     padding: 0 120px;
 }
 .dest-img-container{
-    margin: 50px auto;
+    margin: 70px auto;
     display: grid;
     gap: 15px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    width: 100%;
-    height: 80vh;
     grid-template-areas: 
     "mal mal mal mal mal mal    ind ind ind ind ind ind"
     "sri sri sri sri   nam nam nam nam nam kas  kas kas"
@@ -167,6 +165,7 @@ gap: 20px;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 300px;
     border-radius: 16px;
     background-repeat: no-repeat;
     background-position: center;
@@ -207,7 +206,50 @@ font-size: 1.75rem;
 font-weight: 800;
 }
 
-/* .....Responsiveness for phone/small devices */
+ /* ....Choose Us/service section styles..... */
+
+ .service{
+    margin-bottom: 50px;
+ }
+ .service-content{
+    text-align: center;
+    padding: 0 150px;
+    margin-bottom: 50px;
+ }
+ .service> img, .card-title{
+    margin-bottom: 10px;
+ }
+ .service-card-container1{
+    display: flex;
+    gap: 20px;
+ }
+ .service-card1{
+    padding: 15px;
+    border-radius: 16px;
+border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgba(251, 181, 99, 0.05);
+ }
+ .service-card2{
+    padding: 15px;
+    border-radius: 16px;
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05);
+ }
+ .service-card-container2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .service-card3{
+    width: calc(50% - 10px);
+    padding: 15px;
+    border-radius: 16px;
+border: 1px solid rgba(233, 68, 68, 0.20);
+background: rgba(233, 68, 68, 0.05);
+ }
+
+/* .....Responsiveness for phone/small devices.... */
 
   @media screen and (max-width:600px) {
     *{
@@ -216,6 +258,7 @@ font-weight: 800;
     main{
         width: 90vw;
     }
+    /* .....Header section resp .... */
     nav{
 
         flex-direction: column;
@@ -235,11 +278,13 @@ font-weight: 800;
     .banner-input .text{
        width: 92%;
     }
+    /* .....Popular section resp .... */
     .popular-container{
         flex-direction: column;
         gap: 50px;
         padding: 10px;
     }
+    /* .....Destination section resp.... */
     .dest-content{
         margin-top: 50px;
         padding: 10px;
@@ -263,5 +308,18 @@ font-weight: 800;
     #dest-img{
         background-size: cover;
         height: 300px;
+    }
+    /*... Service section resp ... */
+    .service-content{
+        padding: 10px;
+    }
+    .service-content .heading{
+        margin-bottom: 30px;
+    }
+    .service-card-container1{
+        flex-direction: column;
+    }
+    .service-card3{
+        width: 100%;
     }
   }
