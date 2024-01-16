@@ -251,13 +251,13 @@ background: rgba(233, 68, 68, 0.05);
 
  /* .....Newsletter section styles..... */
  .newsletter{
-  width: 100%;
+  /* width: 100%; */
   margin-top: 100px;
+  margin-bottom: 50px;
  }
  .newsletter-container{
     display: flex;
     gap:20px;
-    
  }
  .input{
   padding: 40px;
@@ -283,15 +283,24 @@ color: rgba(19, 19, 24, 0.30);
 font-size: 1rem;
 font-weight: 400;
  }
- .news-img img{
-  width: 100%;
- }
- .save-btn{
+.news-img-container {
+  padding: 15% 0;
+  width: calc(60% - 20px);
+  height: 100%;
+background-image: url(../Images/Rectangle\ 8\ \(1\).png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 16px;
+}
+ .news-tag{
   position: relative;
-  left: 830px;
-  bottom: 170px;
+  left: 46%;
+  top: 120px;
   transform: rotate(-19.628deg);
-  padding: 10px 30px;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
   border: none;
   border-radius: 20px;
 background: #FF5400;
@@ -427,6 +436,8 @@ font-weight: 300;
     /*... Newsletter section resp ... */
     .newsletter-container{
       flex-direction: column;
+      width: 100%;
+      height: 100%;
     }
     .input{
       margin: 5px;
@@ -438,6 +449,38 @@ font-weight: 300;
     .subscribe{
       width: 100%;
     }
+    .news-img-container{
+      width: 100%;
+      height: 40vh;
+      /* height: 400px; */
+      /* background-size: cover; */
+      background-position: center;
+      object-fit: cover;
+    }
+    .news-tag{
+      position: relative;
+      left: 120px;
+      top: 165px;
+      transform: rotate(-19.628deg);
+      max-width: 50%;
+      text-align: center;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+    background: #FF5400;
+     }
+     .save-link{
+      color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: normal;
+     }
+     .save-title{
+      color: #FFF;
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: normal;
+     }
     /*... Footer section resp ... */
     footer{
       padding: 20px;
