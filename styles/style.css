@@ -40,6 +40,7 @@ cursor: pointer;
 }
 
   /* .....Header section styles...... */
+  
 header{
     margin-bottom: 70px;
 }
@@ -124,7 +125,6 @@ padding-bottom: 20px;
     font-size: 1rem;
     font-weight: 400;
   }
- 
 
 /* .....Our Popular section styles..... */
 
@@ -302,7 +302,6 @@ margin-top: 60px;
  .deals-content{
   text-align: center;
   margin: 40px 80px;
-
  }
  .deal-card .icons{
   display: flex;
@@ -339,7 +338,7 @@ margin-bottom: 20px;
   background-position: center;
  }
  .package-3{
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   border-radius: 20px;
   display: flex;
   justify-content: flex-end;
@@ -356,10 +355,90 @@ border: 2px solid #FFF;
 background: rgba(255, 255, 255, 0.80);
 backdrop-filter: blur(2.5px);
  }
+ .package-btn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+ }
+
+ /* ....Video section styles.... */
+
+.video{
+  display: flex;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+ .video-content{
+width: calc(40% - 40px);
+padding: 20px;
+padding-right: 10px;
+ }
+ .video-list{
+color: #131318;
+font-size: 1rem;
+font-weight: 700;
+line-height: 26px; 
+padding-bottom: 20px;
+ }
+ .video-image{
+  background-image: url(../Images/Group\ 40089.png);
+  background-size: cover;
+  background-position: center;
+ }
+ .video-image{
+  width: calc(60% - 40px);
+  border-radius: 20px;
+ }
+ .video-title{
+  color: #FFF;
+text-align: center;
+font-size: 1.5rem;
+font-weight: 700;
+width: 100%;
+height: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+ }
+ .video-controller{
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+ }
+ .left-control{
+  display: flex;
+  gap: 15px;
+ }
+ .duration{
+  color:  #F3F3F3;
+font-size: 1rem;
+font-weight: 400;
+line-height: normal;
+ }
+ .right-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20px;
+ }
+ .time-bar{
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+ }
+ .time-bar hr{
+  border: none;
+background: rgba(53, 52, 52, 0.912);
+  height: 5px;
+  width: 100%;
+ }
+ .time-bar img{
+  margin-bottom: 28px;
+ }
 
  /* .....Newsletter section styles..... */
+
  .newsletter{
-  /* width: 100%; */
   margin-top: 100px;
   margin-bottom: 50px;
  }
@@ -427,6 +506,7 @@ line-height: 2px;
  }
 
  /* .....Footer section styles..... */
+
  footer{
  padding: 50px 80px;
   background: rgba(19, 19, 24, 0.05);
@@ -638,5 +718,24 @@ font-weight: 300;
     .footer-heading{
       gap: 5px;
       width: 50%;
+    }
+    /*.... Video section resp .... */
+    .video{
+      flex-direction: column;
+    }
+    .video-content{
+      width: 100%;
+      padding: 10px;
+    }
+    .video-image{
+      width: 100%;
+      height: 65vh;
+    }
+    .video-controller{
+      padding: 0 auto;
+      gap: 300px;
+    }
+    .left-control{
+      justify-content: flex-start;
     }
   }
