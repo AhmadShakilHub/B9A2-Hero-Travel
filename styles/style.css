@@ -250,15 +250,64 @@ background: rgba(233, 68, 68, 0.05);
  }
 
  /* .....Newsletter section styles..... */
+ .newsletter{
+  width: 100%;
+  margin-top: 100px;
+ }
  .newsletter-container{
     display: flex;
     gap:20px;
+    
  }
- .
- .
- .
- .
- .
+ .input{
+  padding: 40px;
+  border-radius: 16px;
+border: 1px solid #FF5400;
+ }
+ .newsletter-form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+ hr{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: rgba(19, 19, 24, 0.10);
+ }
+ #name, #email{
+  border: none;
+  padding: 15px ;
+  border-radius: 8px;
+background: rgba(19, 19, 24, 0.05);
+color: rgba(19, 19, 24, 0.30);
+font-size: 1rem;
+font-weight: 400;
+ }
+ .news-img img{
+  width: 100%;
+ }
+ .save-btn{
+  position: relative;
+  left: 830px;
+  bottom: 170px;
+  transform: rotate(-19.628deg);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+background: #FF5400;
+ }
+ .save-link{
+  color: #FFF;
+font-size: 1.5rem;
+font-weight: 400;
+line-height: 2px;
+ }
+ .save-title{
+  color: #FFF;
+font-size: 2rem;
+font-weight: 800;
+line-height: 2px;
+ }
 
 /* .....Responsiveness for phone/small devices.... */
 
@@ -332,5 +381,19 @@ background: rgba(233, 68, 68, 0.05);
     }
     .service-card3{
         width: 100%;
+    }
+    /*... Newsletter section resp ... */
+    .newsletter-container{
+      flex-direction: column;
+    }
+    .input{
+      margin: 5px;
+    }
+    #name, #email{
+      width: 93%;
+      margin: 0 auto;
+    }
+    .subscribe{
+      width: 100%;
     }
   }
