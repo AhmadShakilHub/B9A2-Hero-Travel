@@ -309,6 +309,48 @@ font-weight: 800;
 line-height: 2px;
  }
 
+ /* .....Footer section styles..... */
+ footer{
+ padding: 50px 80px;
+  background: rgba(19, 19, 24, 0.05);
+ }
+ .footer-container{
+  padding: 0 40px;
+  text-align: center;
+ }
+ .footer-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+margin-bottom: 20px;
+ }
+ .footer-title{
+  line-height: 5px;
+  color:  #131318;
+font-size: 2rem;
+font-weight: 800;
+ }
+ .footer-title span{
+  color: #FF5400;
+font-size: 2rem;
+font-weight: 800;
+ }
+ .social{
+  padding: 20px;
+  margin-top: 20px;
+ }
+ hr{
+  background: rgba(19, 19, 24, 0.10);
+  margin-bottom: 50px;
+ }
+ .copyright{
+  text-decoration: none;
+  color: #131318;
+font-size: 1rem;
+font-weight: 300;
+ }
+
 /* .....Responsiveness for phone/small devices.... */
 
   @media screen and (max-width:600px) {
@@ -395,5 +437,13 @@ line-height: 2px;
     }
     .subscribe{
       width: 100%;
+    }
+    /*... Footer section resp ... */
+    footer{
+      padding: 20px;
+    }
+    .footer-heading{
+      gap: 5px;
+      width: 50%;
     }
   }
