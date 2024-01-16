@@ -249,6 +249,53 @@ border: 1px solid rgba(233, 68, 68, 0.20);
 background: rgba(233, 68, 68, 0.05);
  }
 
+ /* ....Routes section styles.... */
+
+ .routes{
+margin-bottom: 70px;
+background-color: rgba(210, 185, 134, 0.242);
+border-radius: 20px;
+padding: 20px 10px;
+ }
+ .route-content{
+  text-align: center;
+  padding: 20px 120px;
+ }
+ .route-air, .route-marine, .route-road{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+ }
+ .air-title, .marine-title, .road-title{
+  color: #131318;
+font-size: 1.5rem;
+font-weight: 800;
+margin-top: 60px;
+ }
+ .flex-content{
+  padding: 20px;
+  width: calc(50% - 20px);
+  margin: 0 auto;
+  border-radius: 16px;
+ }
+ .air-content{
+  background-color: rgba(147, 187, 188, 0.445);
+ }
+ .marine-content{
+  background-color: rgba(188, 185, 147, 0.445);
+ }
+ .road-content{
+  background-color: rgba(188, 147, 182, 0.445);
+ }
+ .route-img{
+  width: calc(50% - 20px);
+ }
+ .route-img img{
+  border-radius: 16px;
+  width: 100%;
+ }
+
+
  /* .....Newsletter section styles..... */
  .newsletter{
   /* width: 100%; */
@@ -432,6 +479,29 @@ font-weight: 300;
     }
     .service-card3{
         width: 100%;
+    }
+    /*... Route section resp ... */
+    .route-air, .route-marine, .route-road{
+      flex-direction: column;
+      padding: 0 10px;
+    }
+    .route-title{
+      margin-bottom: 30px;
+    }
+    .route-content{
+      padding: 10px;
+    }
+    .air-title, .marine-title, .road-title{
+      margin-top: 20px;
+    }
+    .flex-content{
+      width: calc(100% - 40px);
+    }
+    .route-img{
+      width: 100%;
+    }
+    .route-marine{
+      flex-direction: column-reverse;
     }
     /*... Newsletter section resp ... */
     .newsletter-container{
